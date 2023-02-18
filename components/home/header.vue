@@ -98,7 +98,7 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #7cbdb9b4;
-  opacity: 0.8;
+  opacity: 0.6;
   display: flex;
   flex-direction: column;
   justify-content: center;

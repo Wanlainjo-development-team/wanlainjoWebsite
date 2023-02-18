@@ -13,6 +13,7 @@
   "dependencies": {
     "@mdi/font": "^7.1.96",
     "@pinia/nuxt": "^0.4.6",
+    "animejs": "^3.2.1",
     "dat.gui": "^0.7.9",
     "pinia": "^2.0.29",
     "sass": "^1.57.1",
