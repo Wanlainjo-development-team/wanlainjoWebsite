@@ -20,6 +20,7 @@
     "stats.js": "0.17.0",
     "three": "^0.149.0",
     "tweakpane": "3.0.5",
+    "vue-js-counter": "^1.0.3",
     "vuesax3": "^4.1.1",
     "vuetify": "^3.1.2"
   }

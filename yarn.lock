@@ -4265,6 +4265,11 @@ vue-devtools-stub@^0.1.0:
   resolved "https://registry.npmjs.org/vue-devtools-stub/-/vue-devtools-stub-0.1.0.tgz"
   integrity sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==
 
+vue-js-counter@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vue-js-counter/-/vue-js-counter-1.0.3.tgz#0c7220a77f373d5d92f1bf8b83e80d4d72e4d508"
+  integrity sha512-sZW++VKKtsDYftHSxp7CpAfuqriYbsr6BSm8pJpOQODRhiOuMHGKOtYoxQ7vUKqjqlF1N19laF1dlMYDtkSHTg==
+
 vue-router@^4.1.6:
   version "4.1.6"
   resolved "https://registry.npmjs.org/vue-router/-/vue-router-4.1.6.tgz"
