@@ -3,14 +3,14 @@
   <v-container>
     <v-row justify="space-between">
       <v-col cols="12" sm="5">
-        <v-card color="blue" class="rounded-0" flat>
+        <v-card color="indigo-accent-4" class="rounded-xl" elevation="4">
           <v-card-text class="text-h6 text-lg-h6">
             <span style="line-height: 1em"
               >Contact Metronet Chiropractic Clinic Chiropractors</span
             >
           </v-card-text>
           <v-card-subtitle class="text-white">
-            We want to hear from you! Call us at (952) 473-9637.
+            We want to hear from you! Call us at +2348179612183.
           </v-card-subtitle>
 
           <v-divider class="my-5" />
@@ -24,8 +24,8 @@
               class="mb-3"
             >
               <template v-slot:prepend>
-                <v-avatar color="blue-lighten-5" class="rounded-lg">
-                  <v-icon color="blue">{{ info.icon }}</v-icon>
+                <v-avatar color="indigo-lighten-5" class="rounded-lg">
+                  <v-icon color="indigo-accent-4">{{ info.icon }}</v-icon>
                 </v-avatar>
               </template>
             </v-list-item>
@@ -46,11 +46,11 @@
             >
               <template v-slot:prepend>
                 <v-avatar
-                  color="blue-lighten-5"
+                  color="indigo-lighten-5"
                   class="rounded-lg"
                   size="small"
                 >
-                  <v-icon color="blue" size="-x-small">mdi-clock</v-icon>
+                  <v-icon color="indigo-accent-4" size="-x-small">mdi-clock</v-icon>
                 </v-avatar>
               </template>
             </v-list-item>
@@ -59,7 +59,6 @@
       </v-col>
       <v-col cols="12" sm="7">
         <ContactForm id="contact" />
-        <SendMessage />
       </v-col>
     </v-row>
   </v-container>
@@ -67,30 +66,24 @@
 
 <script setup>
 import { ref } from "vue";
-import Header from "~~/components/contact/header.vue";
-import ContactForm from "~~/components/fragments/contactForm.vue";
-import SendMessage from "~~/components/fragments/sendMessage.vue";
+import Header from "@/components/contact/header.vue";
+import ContactForm from "@/components/fragments/contactForm.vue";
 
 const contactInfo = ref([
   {
     icon: "mdi-map-marker",
-    title: "1421 Wayzata Blvd E. Suite 100",
-    subtitle: "Wayzata, MN 55391",
+    title: "20 Peremabiri Street, Dline Port",
+    subtitle: "Harcourt, R/S Nigeria",
   },
   {
     icon: "mdi-email",
-    title: "cfokumahlah@hotmail.com",
+    title: "info@wanLainjotechhub.org",
     subtitle: "Need help? Drop us an email.",
   },
   {
     icon: "mdi-phone",
-    title: "(952) 473-9637",
+    title: "+2348179612183",
     subtitle: "Call us for an appointment.",
-  },
-  {
-    icon: "mdi-star",
-    title: "(952)475-1998",
-    subtitle: "New Patient Hotline!",
   },
 ]);
 

@@ -8,48 +8,74 @@
     <v-card-text>
       <v-row justify="space-between">
         <v-col cols="12" sm="6">
-          <v-text-field
-            density="compact"
-            variant="outlined"
-            label="Name"
-            hide-details
-            color="indigo-accent-4"
-            prepend-inner-icon="mdi-account"
-          />
+          <v-sheet
+            width="100%"
+            class="rounded-lg overflow-hidden"
+            elevation="4"
+          >
+            <v-text-field
+              density="compact"
+              variant="solo"
+              placeholder="Name"
+              hide-details
+              color="indigo-accent-4"
+              prepend-inner-icon="mdi-account"
+            />
+          </v-sheet>
         </v-col>
         <v-col cols="12" sm="6">
-          <v-text-field
-            density="compact"
-            variant="outlined"
-            label="Email"
-            hide-details
-            color="blue"
-            prepend-inner-icon="mdi-email"
-          />
+          <v-sheet
+            width="100%"
+            class="rounded-lg overflow-hidden"
+            elevation="4"
+          >
+            <v-text-field
+              density="compact"
+              variant="solo"
+              placeholder="Email"
+              hide-details
+              color="indigo-accent-4"
+              prepend-inner-icon="mdi-email"
+            />
+          </v-sheet>
         </v-col>
         <v-col cols="12">
-          <v-text-field
-            density="compact"
-            variant="outlined"
-            label="Subject"
-            hide-details
-            color="blue"
-            prepend-inner-icon="mdi-text"
-          />
+          <v-sheet
+            width="100%"
+            class="rounded-lg overflow-hidden"
+            elevation="4"
+          >
+            <v-text-field
+              density="compact"
+              variant="solo"
+              placeholder="Subject"
+              hide-details
+              color="indigo-accent-4"
+              prepend-inner-icon="mdi-text"
+            />
+          </v-sheet>
         </v-col>
         <v-col cols="12">
-          <v-textarea
-            density="compact"
-            variant="outlined"
-            label="Message"
-            prepend-inner-icon="mdi-message"
-            hide-details
-            color="blue"
-          />
+          <v-sheet
+            width="100%"
+            class="rounded-lg overflow-hidden"
+            elevation="4"
+          >
+            <v-textarea
+              density="compact"
+              variant="solo"
+              placeholder="Message"
+              prepend-inner-icon="mdi-message"
+              hide-details
+              color="indigo-accent-4"
+            />
+          </v-sheet>
         </v-col>
       </v-row>
       <v-card-actions class="px-0 mt-4">
-        <v-btn class="text-body-2 bg-indigo-accent-4 rounded-lg">Send Message</v-btn>
+        <v-btn elevation="4" class="text-body-2 bg-indigo-accent-4 rounded-lg"
+          >Send Message</v-btn
+        >
       </v-card-actions>
     </v-card-text>
   </v-card>

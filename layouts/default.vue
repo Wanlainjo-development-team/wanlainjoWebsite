@@ -15,6 +15,10 @@
 import AppBar from "./AppBar.vue";
 import Drawer from "./Drawer.vue";
 import Footer from "./Footer.vue";
+import { useCoursesStore } from "@/store/courses";
+
+const courses = useCoursesStore();
+courses.fetchCourses();
 </script>
 
 <style scoped>
