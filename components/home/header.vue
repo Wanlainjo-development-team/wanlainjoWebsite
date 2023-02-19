@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="pa-0 ma-0 mt-n16 header">
-    <v-container style="height: 100%">
+    <v-container class="d-flex align-center" style="height: 100%">
       <v-row class="row">
         <v-col
           cols="12"
@@ -20,7 +20,7 @@
         </v-col>
         <v-col cols="12" sm="4" class="col2 d-flex align-center">
           <v-card flat class="glassCard">
-            <v-card-text class="text-caption text-grey-darken-3">
+            <v-card-text class="text-body-2 text-grey-darken-3">
               Gain new skills in just a few months. Go from Newbie to Pro in a
               short time. Explore the most effective way to grow your skills,
               transform yourself and be market ready in a few months.
@@ -62,8 +62,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/styles/home/head.css";
-
 .header {
   background-image: url("@/assets/images/bg1.jpg");
   background-size: cover;
