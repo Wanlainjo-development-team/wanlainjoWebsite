@@ -33,7 +33,16 @@
 
             <v-spacer />
 
-            <v-btn class="text-capitalize bg-indigo-lighten-5 rounded-xl text-indigo-accent-4">View Event</v-btn>
+            <v-btn
+              :to="mentor.to"
+              class="
+                text-capitalize
+                bg-indigo-lighten-5
+                rounded-xl
+                text-indigo-accent-4
+              "
+              >View Event</v-btn
+            >
           </v-card-actions>
         </v-card>
       </v-col>
@@ -69,6 +78,7 @@ const mentors = ref([
         link: "https://www.instagram.com/johndoe/",
       },
     ],
+    to: "/event",
   },
   {
     image:
@@ -94,6 +104,7 @@ const mentors = ref([
         link: "https://www.instagram.com/johndoe/",
       },
     ],
+    to: "/event",
   },
   {
     image:
@@ -119,6 +130,7 @@ const mentors = ref([
         link: "https://www.instagram.com/johndoe/",
       },
     ],
+    to: "/event",
   },
 ]);
 

@@ -63,7 +63,7 @@
     </v-btn>
 
     <v-btn
-      to="/contact"
+      to="/register"
       class="
         bg-indigo-accent-4
         mx-2

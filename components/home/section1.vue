@@ -12,7 +12,7 @@
             transform yourself and be market ready in a few months.
           </v-card-text>
           <v-card-actions>
-            <v-btn class="bg-indigo-accent-4 text-capitalize rounded-lg">
+            <v-btn to="/about" class="bg-indigo-accent-4 text-capitalize rounded-lg">
               Learn More
             </v-btn>
           </v-card-actions>

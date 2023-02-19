@@ -27,7 +27,7 @@
               transform yourself and be market ready in a few months.
             </v-card-text>
             <v-card-actions>
-              <v-btn block class="bg-indigo-accent-4 rounded-lg"
+              <v-btn to="/register" block class="bg-indigo-accent-4 rounded-lg"
                 >Join Us Now</v-btn
               >
             </v-card-actions>
