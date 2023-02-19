@@ -98,7 +98,7 @@ const hints = ref(true);
 <style scoped>
 .glass {
   background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(8.5px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 </style>

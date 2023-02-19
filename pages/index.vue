@@ -3,8 +3,8 @@
   <Section1 />
   <Section2 />
   <Section3 />
-  <!-- <Section4 /> -->
-  <!-- <Section5 /> -->
+  <Section4 />
+  <Section5 />
   <!-- <v-row>
     <v-col cols="12" sm="5">
       <v-parallax

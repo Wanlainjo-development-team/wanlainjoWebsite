@@ -1,86 +1,128 @@
 <template>
-  <v-parallax
-    src="https://res.cloudinary.com/rukkiecodes/image/upload/v1675335033/chriopractor/hidden-bg_ni0a0r.jpg"
-    lazy-src="https://res.cloudinary.com/rukkiecodes/image/upload/v1675307350/chriopractor/placeholder_lnnfrn.jpg"
-    height="400"
-    gradient="rgba(33, 150, 243, 0.9), rgba(33, 150, 243, 0.9)"
-    class="d-flex align-center justify-center"
-  >
-    <v-card color="transparent" class="text-center" flat>
-      <v-card-subtitle class="text-white text-body-1"
-        >HAPPY & HEALTHY!</v-card-subtitle
-      >
-      <v-card-title class="text-white text-h5 text-lg-h4 mb-5"
-        >What Our Patients Are Saying</v-card-title
+  <v-container>
+    <v-card flat class="mb-16">
+      <v-card-title class="text-center text-grey-darken-3 font-weight-bold"
+        >OUR EVENTS</v-card-title
       >
     </v-card>
-    <v-carousel
-      cycle
-      height="100%"
-      interval="10000"
-      hide-delimiters
-      show-arrows="hover"
-      delimiter-icon="mdi-square"
-    >
-      <v-carousel-item v-for="(testimonial, i) in testimonials" :key="i">
-        <v-sheet
-          height="100%"
-          class="d-flex align-center"
-          color="transparent"
-          tile
-        >
-          <v-card
-            width="800"
-            max-width="100%"
-            class="mx-auto d-flex flex-column align-center justify-center"
-            color="transparent"
-            flat
-          >
-            <v-card-text class="text-white text-body-1 text-center"
-              >``{{ testimonial.text }}``<span class="font-weight-bold">--{{ testimonial.name }}</span></v-card-text
+
+    <v-row>
+      <v-col v-for="(mentor, i) in mentors" :key="i" cols="12" sm="6" md="4">
+        <v-card rounded="xl">
+          <v-img
+            :src="mentor.image"
+            cover
+            lazy-src="https://res.cloudinary.com/rukkiecodes/image/upload/v1673741499/wanlainjo/placeholder_iy3n8h.png"
+          />
+          <v-card-title class="text-left text-grey-darken-3 font-weight-bold">{{
+            mentor.name
+          }}</v-card-title>
+          <v-card-subtitle class="text-left">{{
+            mentor.designation
+          }}</v-card-subtitle>
+          <v-card-actions>
+            <v-btn
+              v-for="(link, i) in mentor.links"
+              :key="i"
+              @click="openLink(link.link)"
+              icon
+              size="small"
             >
-            <v-rating
-              v-model="testimonial.rating"
-              bg-color="orange-lighten-1"
-              color="amber"
-            />
-          </v-card>
-        </v-sheet>
-      </v-carousel-item>
-    </v-carousel>
-  </v-parallax>
+              <v-icon>{{ link.icon }}</v-icon>
+            </v-btn>
+
+            <v-spacer />
+
+            <v-btn class="text-capitalize bg-indigo-lighten-5 rounded-xl text-indigo-accent-4">View Event</v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script setup>
 import { ref } from "vue";
 
-const slides = ref(["First", "Second", "Third", "Fourth", "Fifth"]);
-
-const testimonials = ref([
+const mentors = ref([
   {
-    text: "I have been going to Dr Smith for years and he has truly changed my life. Not only has he helped alleviate my chronic back pain, but he has also taught me ways to maintain my overall well-being. I highly recommend him to anyone in need of chiropractic care.",
-    name: "Susan K",
-    rating: 4,
+    image:
+      "https://res.cloudinary.com/rukkiecodes/image/upload/v1673565438/wanlainjo/events/leveraging_the_tech_space_afz954.jpg",
+    name: "Leveraging the Tch space",
+    designation:
+      "This event is for those who are interested in learning how to leverage the tech space to build a career in tech",
+    description: [
+      "Well-organised, problem solver, independent with high attention to detail. fan of Animated sries, outdoor activities, and networking.",
+      "Intersted in the entire frontend spectrum and working on ambirious projects with positive people.",
+    ],
+    links: [
+      {
+        icon: "mdi-linkedin",
+        link: "https://www.linkedin.com/in/john-doe-123456789/",
+      },
+      {
+        icon: "mdi-twitter",
+        link: "https://twitter.com/johndoe",
+      },
+      {
+        icon: "mdi-instagram",
+        link: "https://www.instagram.com/johndoe/",
+      },
+    ],
   },
   {
-    text: "I was sceptical of chiropractic care at first, but after just one session with Dr Brown, I was a believer. She not only relieved my neck pain, but she also took the time to explain the root cause and showed me exercises to prevent it from happening again. I can't thank her enough!",
-    name: "John D",
-    rating: 3,
+    image:
+      "https://res.cloudinary.com/rukkiecodes/image/upload/v1676810027/wanlainjo/events/WhatsApp_Image_2023-02-13_at_12.36.38_ea7b9x.jpg",
+    name: "Leveraging the Tch space",
+    designation:
+      "This event is for those who are interested in learning how to leverage the tech space to build a career in tech",
+    description: [
+      "Well-organised, problem solver, independent with high attention to detail. fan of Animated sries, outdoor activities, and networking.",
+      "Intersted in the entire frontend spectrum and working on ambirious projects with positive people.",
+    ],
+    links: [
+      {
+        icon: "mdi-linkedin",
+        link: "https://www.linkedin.com/in/john-doe-123456789/",
+      },
+      {
+        icon: "mdi-twitter",
+        link: "https://twitter.com/johndoe",
+      },
+      {
+        icon: "mdi-instagram",
+        link: "https://www.instagram.com/johndoe/",
+      },
+    ],
   },
   {
-    text: "Dr Johnson has been a lifesaver for my family. From pediatric care for my children to geriatric care for my ageing parents, he has helped us all with a gentle and personalized approach. We are so grateful to have found such a wonderful chiropractor.",
-    name: "Amanda R",
-    rating: 5,
-  },
-  {
-    text: "I was in a car accident and had severe whiplash. After just a few visits with Dr Patel, I was able to return to work and resume my normal activities. I was amazed at how quickly and effectively she was able to treat my pain.",
-    name: "Michael S",
-    rating: 4.5,
-  },
-  {
-    text: "Dr Lee has a true passion for chiropractic care and it shows in his dedication to his patients. He has helped me through various sports injuries and has always made sure I was comfortable and understood the treatment process. I would recommend him to anyone looking for a chiropractor.",
-    name: "Jennifer L",
-    rating: 5,
+    image:
+      "https://res.cloudinary.com/rukkiecodes/image/upload/v1676810026/wanlainjo/events/WhatsApp_Image_2023-02-14_at_08.26.49_qdtzqm.jpg",
+    name: "Leveraging the Tch space",
+    designation:
+      "This event is for those who are interested in learning how to leverage the tech space to build a career in tech",
+    description: [
+      "Well-organised, problem solver, independent with high attention to detail. fan of Animated sries, outdoor activities, and networking.",
+      "Intersted in the entire frontend spectrum and working on ambirious projects with positive people.",
+    ],
+    links: [
+      {
+        icon: "mdi-linkedin",
+        link: "https://www.linkedin.com/in/john-doe-123456789/",
+      },
+      {
+        icon: "mdi-twitter",
+        link: "https://twitter.com/johndoe",
+      },
+      {
+        icon: "mdi-instagram",
+        link: "https://www.instagram.com/johndoe/",
+      },
+    ],
   },
 ]);
+
+const openLink = (link) => {
+  window.open(link, "_blank");
+};
 </script>
