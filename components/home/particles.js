@@ -8,12 +8,9 @@ export default () => {
     // Scene
     const scene = new THREE.Scene()
 
-    // Objects
-    const geometry = new THREE.TorusGeometry(.7, .2, 16, 100);
-
     // particles geometry
     const particlesGeometry = new THREE.BufferGeometry;
-    const particlesCnt = 6000;
+    const particlesCnt = 10000;
 
     const posArray = new Float32Array(particlesCnt * 3);
 
@@ -71,7 +68,7 @@ export default () => {
     const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
     camera.position.x = 0
     camera.position.y = 0
-    camera.position.z = 2
+    camera.position.z = 1
     scene.add(camera)
 
     //  Renderer

@@ -7,10 +7,9 @@
             A hub for impact</v-card-title
           >
           <v-card-text class="text-grey-darken-3">
-            Vatebra techhub is in partnership with the Bank of industry have a
-            physical presence in Lagos, Bayelsa(Yenogoa and Otu-Orua) and Kaduna
-            states; with plans to expand across the six geo-political zones in
-            Nigeria.
+            Gain new skills in just a few months. Go from Newbie to Pro in a
+            short time. Explore the most effective way to grow your skills,
+            transform yourself and be market ready in a few months.
           </v-card-text>
           <v-card-actions>
             <v-btn class="bg-indigo-accent-4 text-capitalize rounded-lg">

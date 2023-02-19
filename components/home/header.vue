@@ -4,7 +4,8 @@
       <v-row class="row">
         <v-col
           cols="12"
-          sm="8"
+          sm="6"
+          lg="8"
           class="pl-lg-16 d-flex flex-column align-start justify-center"
         >
           <h1
@@ -18,7 +19,7 @@
             Wanlainjo Tech Hub
           </h1>
         </v-col>
-        <v-col cols="12" sm="4" class="col2 d-flex align-center">
+        <v-col cols="12" sm="6" lg="4" class="col2 d-flex align-center">
           <v-card flat class="glassCard">
             <v-card-text class="text-body-2 text-grey-darken-3">
               Gain new skills in just a few months. Go from Newbie to Pro in a
@@ -119,6 +120,6 @@ export default {
   -webkit-backdrop-filter: blur(4.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  z-index: 1;
+  z-index: 2;
 }
 </style>

@@ -5,19 +5,15 @@
   <Section3 />
   <Section4 />
   <Section5 />
-  <!-- <v-row>
+  <Section6 />
+  <v-row>
     <v-col cols="12" sm="5">
-      <v-parallax
-        cover
-        width="100%"
-        src="https://res.cloudinary.com/rukkiecodes/image/upload/v1675350855/chriopractor/room1-1_h3kdhe.jpg"
-      />
+      <Globe />
     </v-col>
     <v-col cols="12" sm="7">
       <ContactForm />
     </v-col>
-  </v-row> -->
-  <!-- <Section6 /> -->
+  </v-row>
   <!-- <Section7 /> -->
 </template>
 
@@ -28,9 +24,10 @@ import Section2 from "~~/components/home/section2.vue";
 import Section3 from "~~/components/home/section3.vue";
 import Section4 from "~~/components/home/section4.vue";
 import Section5 from "~~/components/home/section5.vue";
-import ContactForm from "~~/components/fragments/contactForm.vue";
 import Section6 from "~~/components/home/section6.vue";
-import Section7 from "~~/components/home/section7.vue";
+import ContactForm from "~~/components/fragments/contactForm.vue";
+// import Section7 from "~~/components/home/section7.vue";
+import Globe from '@/components/fragments/globe.vue'
 </script>
 
 <style>
