@@ -13,7 +13,7 @@
             variant="outlined"
             label="Name"
             hide-details
-            color="blue"
+            color="indigo-accent-4"
             prepend-inner-icon="mdi-account"
           />
         </v-col>
@@ -49,7 +49,7 @@
         </v-col>
       </v-row>
       <v-card-actions class="px-0 mt-4">
-        <v-btn class="text-body-2 bg-blue">Send Message</v-btn>
+        <v-btn class="text-body-2 bg-indigo-accent-4 rounded-lg">Send Message</v-btn>
       </v-card-actions>
     </v-card-text>
   </v-card>
