@@ -19,6 +19,7 @@
         text-capitalize
         hidden-md-and-down
         ml-2
+        rounded-lg
       "
       v-for="(route, i) in drawer.routes"
       :key="i"
@@ -64,13 +65,14 @@
     <v-btn
       to="/contact"
       class="
-        bg-blue
+        bg-indigo-accent-4
         mx-2
         font-weight-bold
         text-body-2 text-capitalize
         hidden-sm-and-down
+        rounded-lg
       "
-      >Make an appointment</v-btn
+      >Register</v-btn
     >
     <v-app-bar-nav-icon
       @click="drawer.drawer = !drawer.drawer"
