@@ -76,25 +76,6 @@ const routes = ref([
   { title: "Graphic Services", to: "" },
 ]);
 
-const socials = ref([
-  {
-    icon: "mdi-facebook",
-    link: "https://www.facebook.com/metronetchiropracticclinic",
-  },
-  {
-    icon: "mdi-twitter",
-    link: "https://twitter.com/metronetchiro",
-  },
-  {
-    icon: "mdi-instagram",
-    link: "https://www.instagram.com/metronetchiro/",
-  },
-  {
-    icon: "mdi-youtube",
-    link: "https://www.youtube.com/channel/UCY8YQZ1ZQZ1ZQZ1ZQZ1ZQZ1",
-  },
-]);
-
 const redirect = (location) => {
   window.open(location);
 };

@@ -6,7 +6,7 @@
         <v-card color="indigo-accent-4" class="rounded-xl" elevation="4">
           <v-card-text class="text-h6 text-lg-h6">
             <span style="line-height: 1em"
-              >Contact Metronet Chiropractic Clinic Chiropractors</span
+              >Contact Wanlainjo Tech Hub</span
             >
           </v-card-text>
           <v-card-subtitle class="text-white">
