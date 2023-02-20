@@ -22,6 +22,18 @@ export const useDraerStore = defineStore('websiteDraer', {
                 icon: 'mdi-account-voice',
                 to: '/contact',
                 menu: false
+            },
+            {
+                title: 'Courses',
+                icon: 'mdi-account-voice',
+                to: '/courses',
+                menu: false
+            },
+            {
+                title: 'Event',
+                icon: 'mdi-account-voice',
+                to: '/event',
+                menu: false
             }
         ]
     })
