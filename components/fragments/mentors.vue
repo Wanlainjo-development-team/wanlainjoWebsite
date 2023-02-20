@@ -1,18 +1,43 @@
 <template>
-  <v-container class="my-16 text-center">
-    <v-card flat class="mb-16">
-      <v-card-title class="text-grey-daken-3 font-weight-bold"
-        >Meet your Mentors</v-card-title
-      >
-    </v-card>
-
-    <Mentors />
-  </v-container>
+  <v-row>
+    <v-col
+      v-for="(mentor, i) in mentors"
+      :key="i"
+      cols="12"
+      sm="6"
+      md="4"
+      lg="3"
+    >
+      <v-card rounded="xl">
+        <v-img
+          :src="mentor.image"
+          cover
+          lazy-src="https://res.cloudinary.com/rukkiecodes/image/upload/v1673741499/wanlainjo/placeholder_iy3n8h.png"
+        />
+        <v-card-title class="text-left text-grey-darken-3 font-weight-bold">{{
+          mentor.name
+        }}</v-card-title>
+        <v-card-subtitle class="text-left">{{
+          mentor.designation
+        }}</v-card-subtitle>
+        <v-card-actions>
+          <v-btn
+            v-for="(link, i) in mentor.links"
+            :key="i"
+            @click="openLink(link.link)"
+            icon
+            size="small"
+          >
+            <v-icon>{{ link.icon }}</v-icon>
+          </v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-col>
+  </v-row>
 </template>
 
 <script setup>
 import { ref } from "vue";
-import Mentors from "@/components/fragments/mentors.vue";
 
 const mentors = ref([
   {
@@ -208,8 +233,4 @@ const mentors = ref([
     ],
   },
 ]);
-
-const openLink = (link) => {
-  window.open(link, "_blank");
-};
 </script>
