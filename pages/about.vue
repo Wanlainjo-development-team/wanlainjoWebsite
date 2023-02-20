@@ -1,15 +1,7 @@
 <template>
-  <v-container>
-    <h1>About Us</h1>
-  </v-container>
+  <Header />
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+import Header from "@/components/about/header.vue";
 </script>
-
-<style>
-
-</style>

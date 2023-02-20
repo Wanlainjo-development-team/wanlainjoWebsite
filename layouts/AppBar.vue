@@ -15,12 +15,13 @@
       variant="text"
       class="
         text-body-2
-        font-weight-regular
+        font-weight-bold
         text-capitalize
         hidden-md-and-down
         ml-2
         rounded-lg
       "
+      color="indigo"
       v-for="(route, i) in drawer.routes"
       :key="i"
       :to="route.to"
@@ -83,7 +84,7 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref } from "vue";
 import { useDraerStore } from "@/store/drawer";
 import { useDisplay } from "vuetify";
 
