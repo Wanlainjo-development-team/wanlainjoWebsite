@@ -1,15 +1,9 @@
 <template>
-  <v-container>
-    <h1>Registration page</h1>
-  </v-container>
+  <Header />
+  <Form />
 </template>
 
-<script>
-export default {
-
-}
+<script setup>
+import Header from "@/components/register/header.vue";
+import Form from "@/components/register/form.vue";
 </script>
-
-<style>
-
-</style>
