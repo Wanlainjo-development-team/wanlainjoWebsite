@@ -115,7 +115,7 @@ export const useRegistrationStore = defineStore('registration', {
                                 // show snackbar
                                 snackbar.active = true
                                 snackbar.color = 'success'
-                                snackbar.text = 'Student registered successfully'
+                                snackbar.text = 'Student registered successfully.\nPlease wait for verification'
                             })
                     })
             }
