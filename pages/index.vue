@@ -1,5 +1,5 @@
 <template>
-  <Header />
+  <Header :showCard="true" title="Wanlainjo Tech Hub" />
   <Section1 />
   <Section6 />
   <Section2 />
@@ -9,7 +9,7 @@
 </template>
 
 <script setup>
-import Header from "@/components/home/header.vue";
+import Header from "@/components/fragments/head.vue";
 import Section1 from "@/components/home/section1.vue";
 import Section2 from "@/components/home/section2.vue";
 import Section3 from "@/components/home/section3.vue";

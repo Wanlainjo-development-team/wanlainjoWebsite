@@ -1,5 +1,5 @@
 <template>
-  <Header />
+  <Header :showCard="false" title="About Us" />
   <Body />
 
   <v-container>
@@ -14,7 +14,7 @@
 </template>
 
 <script setup>
-import Header from "@/components/about/header.vue";
+import Header from "@/components/fragments/head.vue";
 import Body from "@/components/about/body.vue";
 import Mentors from "@/components/fragments/mentors.vue";
 </script>

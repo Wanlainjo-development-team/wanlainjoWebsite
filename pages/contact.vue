@@ -1,5 +1,5 @@
 <template>
-  <Header />
+  <Header :showCard="false" title="Contact Us" />
   <v-container>
     <v-row justify="space-between">
       <v-col cols="12" sm="5">
@@ -66,7 +66,7 @@
 
 <script setup>
 import { ref } from "vue";
-import Header from "@/components/contact/header.vue";
+import Header from "@/components/fragments/head.vue";
 import ContactForm from "@/components/fragments/contactForm.vue";
 
 const contactInfo = ref([

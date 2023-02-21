@@ -9,15 +9,30 @@
           class="pl-lg-16 d-flex flex-column align-start justify-center"
         >
           <h1
-            class="
-              text-h2 text-sm-h2 text-lg-h1
-              font-weight-black
-              text-grey-darken-3
-              mainText
-            "
+            class="text-h2 text-sm-h2 text-lg-h1 font-weight-black text-grey-darken-3 mainText"
           >
-            About Us
+            {{ title }}
           </h1>
+        </v-col>
+        <v-col
+          v-if="showCard"
+          cols="12"
+          sm="6"
+          lg="4"
+          class="col2 d-flex align-center"
+        >
+          <v-card flat class="glassCard">
+            <v-card-text class="text-body-2 text-grey-darken-3">
+              Gain new skills in just a few months. Go from Newbie to Pro in a
+              short time. Explore the most effective way to grow your skills,
+              transform yourself and be market ready in a few months.
+            </v-card-text>
+            <v-card-actions>
+              <v-btn to="/register" block class="bg-indigo-accent-4 rounded-lg"
+                >Join Us Now</v-btn
+              >
+            </v-card-actions>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
@@ -38,17 +53,29 @@
     <canvas class="particles"></canvas>
   </v-container>
 </template>
-
-<script>
+  
+  <script>
 import particles from "../fragments/particles.js";
 export default {
+  props: {
+    showCard: {
+      type: Boolean,
+      default: false,
+    },
+    title: {
+      type: String,
+      default: "Wanlainjo Tech Hub",
+    },
+  },
   mounted() {
     particles();
+
+    console.log(this.showCard);
   },
 };
 </script>
-
-<style scoped lang="scss">
+  
+  <style scoped lang="scss">
 .header {
   background-image: url("@/assets/images/bg1.jpg");
   background-size: cover;
