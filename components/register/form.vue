@@ -82,7 +82,7 @@
         <v-card-title class="pl-0 text-grey-darken-3">Sponsorship Information</v-card-title>
 
         <v-text-field
-          v-model="form.sponsorname"
+          v-model="form.sponsorName"
           variant="underlined"
           label="Sponsorship name"
           color="indigo-accent-4"
@@ -113,7 +113,7 @@
         />
 
         <v-select
-          v-model="form.course1"
+          v-model="form.course1.course"
           variant="underlined"
           label="Course(1)"
           :items="courses.courses"
@@ -121,7 +121,7 @@
           color="indigo-accent-4"
         />
         <v-select
-          v-model="form.course2"
+          v-model="form.course2.course"
           variant="underlined"
           label="Course(2)"
           :items="courses.courses"
@@ -129,7 +129,7 @@
           color="indigo-accent-4"
         />
         <v-select
-          v-model="form.course3"
+          v-model="form.course3.course"
           variant="underlined"
           label="Course(3)"
           :items="courses.courses"

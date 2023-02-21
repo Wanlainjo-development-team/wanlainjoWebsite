@@ -40,6 +40,7 @@
                       >View Detailes</v-btn
                     >
                     <v-btn
+                      :to="`/register/${course?.id}`"
                       size="small"
                       class="text-capitalize bg-indigo-accent-4 rounded-lg"
                       variant="text"

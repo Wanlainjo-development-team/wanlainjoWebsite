@@ -7,7 +7,7 @@
     </v-card>
 
     <v-row justify="space-between">
-      <v-col v-for="(course, i) in courses?.courses?.slice(0, 3)" :key="i" cols="12" sm="6">
+      <v-col v-for="(course, i) in courses?.courses?.slice(0, 4)" :key="i" cols="12" sm="6">
         <v-card elevation="4" rounded="xl">
           <v-card-text>
             <v-row justify="space-between" no-gutters>

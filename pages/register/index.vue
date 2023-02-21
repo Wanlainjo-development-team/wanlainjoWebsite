@@ -2,8 +2,9 @@
   <Header />
   <Form />
 </template>
-
-<script setup>
+  
+  <script setup>
 import Header from "@/components/register/header.vue";
 import Form from "@/components/register/form.vue";
 </script>
+  

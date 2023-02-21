@@ -2,10 +2,8 @@
   <v-app-bar color="transparent" class="glass" flat>
     <v-toolbar-title>
       <v-img
-        cover
-        width="300"
-        aspect-ratio="1.5"
-        src="https://res.cloudinary.com/rukkiecodes/image/upload/v1675910172/chriopractor/svg_egxocc.svg"
+        width="200"
+        src="https://res.cloudinary.com/rukkiecodes/image/upload/v1673741499/wanlainjo/logo_rwijky.png"
       />
     </v-toolbar-title>
 
@@ -13,14 +11,7 @@
 
     <v-btn
       variant="text"
-      class="
-        text-body-2
-        font-weight-bold
-        text-capitalize
-        hidden-md-and-down
-        ml-2
-        rounded-lg
-      "
+      class="text-body-2 font-weight-bold text-capitalize hidden-md-and-down ml-2 rounded-lg"
       color="indigo"
       v-for="(route, i) in drawer.routes"
       :key="i"
@@ -65,14 +56,7 @@
 
     <v-btn
       to="/register"
-      class="
-        bg-indigo-accent-4
-        mx-2
-        font-weight-bold
-        text-body-2 text-capitalize
-        hidden-sm-and-down
-        rounded-lg
-      "
+      class="bg-indigo-accent-4 mx-2 font-weight-bold text-body-2 text-capitalize hidden-sm-and-down rounded-lg"
       >Register</v-btn
     >
     <v-app-bar-nav-icon
