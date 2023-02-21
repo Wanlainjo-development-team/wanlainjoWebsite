@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import particles from "./particles.js";
+import particles from "../fragments/particles.js";
 export default {
   mounted() {
     particles();
