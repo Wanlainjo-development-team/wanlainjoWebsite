@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-row>
-      <v-col cols="12" sm="6">
+      <v-col v-if="currentCourse" cols="12" sm="6">
         <v-card flat>
           <v-img :src="currentCourse?.image" />
           <v-card-title class="text-grey-darken-3">{{

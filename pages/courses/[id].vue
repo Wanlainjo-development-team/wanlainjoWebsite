@@ -1,7 +1,7 @@
 <template>
   <v-container>
     <v-card-text>
-      <v-row justify="space-between">
+      <v-row v-if="currentCourse" justify="space-between">
         <v-col cols="12" sm="6" md="5">
           <v-card flat>
             <v-img class="rounded-lg" :src="currentCourse?.image" />
