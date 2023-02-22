@@ -14,6 +14,7 @@
             elevation="4"
           >
             <v-text-field
+              v-model="contact.name"
               density="compact"
               variant="solo"
               placeholder="Name"
@@ -30,6 +31,7 @@
             elevation="4"
           >
             <v-text-field
+              v-model="contact.email"
               density="compact"
               variant="solo"
               placeholder="Email"
@@ -46,6 +48,7 @@
             elevation="4"
           >
             <v-text-field
+              v-model="contact.subject"
               density="compact"
               variant="solo"
               placeholder="Subject"
@@ -62,6 +65,7 @@
             elevation="4"
           >
             <v-textarea
+              v-model="contact.message"
               density="compact"
               variant="solo"
               placeholder="Message"
@@ -73,10 +77,21 @@
         </v-col>
       </v-row>
       <v-card-actions class="px-0 mt-4">
-        <v-btn elevation="4" class="text-body-2 bg-indigo-accent-4 rounded-lg"
+        <v-btn
+          @click="contact.sendUsAMessage()"
+          elevation="4"
+          :loading="contact.loading"
+          class="text-body-2 bg-indigo-accent-4 rounded-lg"
           >Send Message</v-btn
         >
       </v-card-actions>
     </v-card-text>
   </v-card>
 </template>
+
+<script setup>
+import { ref } from "vue";
+import { useContactStore } from "@/store/contact";
+
+const contact = ref(useContactStore());
+</script>

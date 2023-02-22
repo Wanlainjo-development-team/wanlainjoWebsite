@@ -17,8 +17,8 @@
 
     <template v-slot:append>
       <div class="pa-2">
-        <v-btn block class="bg-blue text-capitalize">
-          Make an appointment
+        <v-btn block to="/register" class="bg-indigo-accent-4 rounded-lg text-capitalize">
+          Register now
         </v-btn>
       </div>
     </template>

@@ -11,7 +11,7 @@
         <v-card elevation="4" rounded="xl">
           <v-card-text>
             <v-row justify="space-between" no-gutters>
-              <v-col cols="5">
+              <v-col cols="12" sm="5">
                 <v-img
                   :src="course.image"
                   lazy-src="https://res.cloudinary.com/rukkiecodes/image/upload/v1675307350/chriopractor/placeholder_lnnfrn.jpg"
@@ -19,7 +19,7 @@
                   class="rounded-lg"
                 />
               </v-col>
-              <v-col cols="7">
+              <v-col cols="12" sm="7">
                 <v-card flat>
                   <v-card-title
                     class="text-body-2 font-weight-bold text-grey-darken-3 pb-0 mt-0 py-0"

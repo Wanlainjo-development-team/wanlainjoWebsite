@@ -69,8 +69,6 @@ export default {
   },
   mounted() {
     particles();
-
-    console.log(this.showCard);
   },
 };
 </script>

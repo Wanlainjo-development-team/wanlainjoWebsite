@@ -81,7 +81,7 @@ export const useRegistrationStore = defineStore('registration', {
                 // upload progress
                 uploadTask.on('state_changed',
                     (snapshot) => { },
-                    (error) => { console.log(error) },
+                    (error) => { },
                     () => {
                         // get image download url
                         getDownloadURL(uploadTask.snapshot.ref)
