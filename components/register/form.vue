@@ -42,7 +42,7 @@
           v-model="form.sex"
           :items="['Male', 'Female']"
           variant="underlined"
-          label="Full name"
+          label="Gender"
           color="indigo-accent-4"
         />
         <v-textarea
