@@ -13,7 +13,7 @@
         </v-card>
       </v-col>
       <v-col cols="12" sm="6">
-        <Form />
+        <Form typeOfForm="registration" />
       </v-col>
     </v-row>
   </v-container>
