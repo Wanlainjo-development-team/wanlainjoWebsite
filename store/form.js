@@ -58,7 +58,7 @@ export const useRegistrationStore = defineStore('registration', {
     }),
 
     actions: {
-        registerStudent() {
+        registerStudent(prop) {
             if (this.studentsname == '' || this.address == '' || this.dob == '' || this.state == '' || this.phone == '' || this.email == '' || this.sponsorName == '' || this.sponsorAddress == '' || this.sponsorPhone == '' || this.campus == null || this.image == null) {
                 snackbar.active = true
                 snackbar.color = 'error'
@@ -87,7 +87,7 @@ export const useRegistrationStore = defineStore('registration', {
                         getDownloadURL(uploadTask.snapshot.ref)
                             .then(async (downloadURL) => {
                                 // add student to firestore
-                                await addDoc(collection(db, 'registration'), {
+                                await addDoc(collection(db, prop == 'bootCamp' ? 'bootCamp' : 'registration'), {
                                     studentsname: this.studentsname,
                                     sex: this.sex,
                                     address: this.address,
