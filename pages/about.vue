@@ -2,7 +2,7 @@
   <Header :showCard="false" title="About Us" />
   <Body />
 
-  <v-container>
+  <!-- <v-container>
     <v-card flat class="mb-16">
       <v-card-title class="text-center text-grey-darken-3"
         >Meet your Mentors</v-card-title
@@ -10,7 +10,7 @@
     </v-card>
 
     <Mentors />
-  </v-container>
+  </v-container> -->
 </template>
 
 <script setup>
